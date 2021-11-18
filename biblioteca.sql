@@ -78,6 +78,7 @@ CALL verPreco(1);
 DELIMITER // 
 
 CREATE FUNCTION calcula_imposto(salario DEC(8,2))RETURNS DEC(8,2)
+DETERMINISTIC
 BEGIN
 
 DECLARE valor_imposto DEC(8,2);
